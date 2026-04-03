@@ -87,6 +87,9 @@ The application will start on:
 
 http://localhost:8087
 
+### Use below username and password to access the api's :-
+username : admin
+password : admin123
 
 # Known Limitations
 - Uses H2 in-memory database, so data resets when the application restarts.
