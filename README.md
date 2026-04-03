@@ -37,6 +37,7 @@ The application provides endpoints for creating, updating, deleting, and analyzi
 ---
 
 # Project Structure
+```bash
 src/main/java/com/example/finance
 │
 ├── controller # REST Controllers
@@ -47,7 +48,7 @@ src/main/java/com/example/finance
 ├── mapper # DTO ↔ Entity Mapping
 ├── config # Security and application configuration
 └── enums # Enum definitions
-
+```
 
 ---
 
@@ -88,8 +89,8 @@ The application will start on:
 http://localhost:8087
 
 ### Use below username and password to access the api's :-
-username : admin
-password : admin123
+- username : admin
+- password : admin123
 
 # Known Limitations
 - Uses H2 in-memory database, so data resets when the application restarts.
