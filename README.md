@@ -37,4 +37,66 @@ The application provides endpoints for creating, updating, deleting, and analyzi
 ---
 
 # Project Structure
+src/main/java/com/example/finance
+│
+├── controller # REST Controllers
+├── service # Business Logic
+├── repository # Data Access Layer
+├── entity # Database Entities
+├── dto # Request/Response DTOs
+├── mapper # DTO ↔ Entity Mapping
+├── config # Security and application configuration
+└── enums # Enum definitions
 
+
+---
+
+# API Documentation
+
+Swagger UI is available at:
+https://finance-tracker-backend-mre3.onrender.com/swagger-ui/index.html
+
+
+Swagger allows interactive testing of all API endpoints.
+
+---
+
+# Running the Application Locally
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/nscspc/finance-tracker.git
+```
+
+### 2. Navigate to the project
+```bash
+cd finance-tracker
+```
+
+### 3. Build the project
+```bash
+mvn clean install
+```
+
+### 4. Run the application
+```bash
+mvn spring-boot:run
+```
+
+The application will start on:
+
+http://localhost:8087
+
+
+# Known Limitations
+- Uses H2 in-memory database, so data resets when the application restarts.
+- Authentication uses basic role-based security instead of JWT.
+- Pagination and advanced filtering can be added for large datasets.
+
+# Future Improvements
+- JWT-based authentication
+- Pagination and sorting
+- Global exception handling
+- Integration tests
+- PostgreSQL or production-grade database
+- CI/CD pipeline
